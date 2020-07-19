@@ -19,6 +19,8 @@ COPY ./utils /uwcourse-server/utils
 
 # Install python to compile argon2
 RUN apk add --update \
+    --upgrade \
+    --no-cache bash git openssh \
     python \
     python-dev \
     py-pip \
